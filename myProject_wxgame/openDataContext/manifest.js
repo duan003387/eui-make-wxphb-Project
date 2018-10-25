@@ -1,0 +1,5 @@
+require("./js/egret.min.js")
+require("./js/eui.min.js")
+require("./js/res.min.js")
+require("./js/main.js")
+require("./js/default.thm.js")

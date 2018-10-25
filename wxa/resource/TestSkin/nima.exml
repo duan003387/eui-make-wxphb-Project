@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="nima" width="510" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="{data.bgimg}" left="0" right="0" top="0" bottom="0"/>
+	<e:Label text="{data.name}" x="253" anchorOffsetX="0" width="189.67" anchorOffsetY="0" height="35" verticalAlign="middle" textAlign="left" size="30" textColor="0xf9cc07" y="13"/>
+	<e:Rect width="90" x="83" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" ellipseWidth="30" ellipseHeight="30" fillColor="0xffffff" height="90"/>
+	<e:Image width="85" height="85" x="85.5" anchorOffsetX="0" anchorOffsetY="0" source="{data.img}" verticalCenter="0.5" mask="touxiangmask"/>
+	<e:Rect id="touxiangmask" width="85" height="85" x="85.5" ellipseWidth="30" ellipseHeight="30" verticalCenter="0.5"/>
+	<e:Image width="50" height="50" x="16" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" source="{data.haungguanimg}"/>
+	<e:Image width="70" height="70" x="428" verticalCenter="0" source="{data.rightImg}"/>
+	<e:Image width="40" height="48" x="203" y="61" source="{data.shouye}"/>
+	<e:Image width="35" height="37" x="205" y="13" source="{data.sexImg}"/>
+</e:Skin>

@@ -1,0 +1,20 @@
+{
+  "166a404054f": {
+    "path": "..\\resource\\test.ts",
+    "class": "test",
+    "parentPath": ""
+  },
+  "166a40714df": {
+    "path": "..\\resource\\itemSkin.ts",
+    "class": "itemSkin",
+    "parentPath": ""
+  },
+  "166a41c00f8": {
+    "path": "..\\resource\\test.ts",
+    "class": "test",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false
+  }
+}

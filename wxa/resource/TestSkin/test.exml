@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="testSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="166a41c00f8" ></w:Config>
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="phb_bg" source="tongyonk_bg_png" anchorOffsetY="0" width="600" scaleX="1" scaleY="1" height="950" horizontalCenter="0" verticalCenter="0%"/>
+		<e:Image id="quanqiuphb_bg" source="tiltle_qqphb_png" width="345" height="85" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-81%"/>
+		<e:Group id="btngroup" width="360" height="60" x="84.12" anchorOffsetY="0" anchorOffsetX="0" touchEnabled="false" scaleX="1" scaleY="1" verticalCenter="-62%">
+			<e:Image width="120" height="60" x="0" y="0" touchEnabled="true"/>
+			<e:Image width="120" height="60" x="0" y="0" touchEnabled="true"/>
+			<e:Image width="120" height="60" x="10" y="10" touchEnabled="true"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Rect width="540" height="720" fillColor="0xc3f3f4" ellipseWidth="100" ellipseHeight="100" horizontalCenter="0" x="28" scaleX="1" scaleY="1" verticalCenter="5%"/>
+		<e:ViewStack id="viewstack" width="510" height="690" selectedIndex="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="7%">
+			<e:Group width="100%" height="100%" name="Group">
+			<e:Scroller id="scroll" anchorOffsetY="0" height="300" y="0" width="510" horizontalCenter="0" x="0" scaleX="1" scaleY="1">
+				<e:List id="list" itemRendererSkinName="nima" anchorOffsetY="0" height="388" y="-1.33">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+				</e:List>
+			</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="Group" x="10" y="10">
+			<e:Scroller id="scroll0" anchorOffsetY="0" height="290.94" y="-0.0999999999999659" width="640" horizontalCenter="0" x="0" scaleX="1" scaleY="1">
+				<e:List id="list0" itemRendererSkinName="nima" anchorOffsetY="0" height="388" y="-1.33">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+				</e:List>
+			</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="Group" x="20" y="20">
+			<e:Scroller id="scroll1" anchorOffsetY="0" height="290.94" y="-0.0999999999999659" width="640" horizontalCenter="0" x="0" scaleX="1" scaleY="1">
+				<e:List id="list1" itemRendererSkinName="nima" anchorOffsetY="0" height="388" y="-1.33">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+				</e:List>
+			</e:Scroller>
+			</e:Group>
+		</e:ViewStack>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="nimaSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16560bc4e2c" ></w:Config>
+	<e:Label id="nima" text="" x="56.36" y="672.27" anchorOffsetX="0" width="461.88" anchorOffsetY="0" height="290.61"/>
+</e:Skin>

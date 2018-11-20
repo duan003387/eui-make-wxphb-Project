@@ -143,24 +143,13 @@ var egret = window.egret;window.skins={};
 	__extends(HScrollBarSkin, _super);
 	function HScrollBarSkin() {
 		_super.call(this);
-		this.skinParts = ["thumb"];
+		this.skinParts = [];
 		
 		this.minHeight = 8;
 		this.minWidth = 20;
-		this.elementsContent = [this.thumb_i()];
 	}
 	var _proto = HScrollBarSkin.prototype;
 
-	_proto.thumb_i = function () {
-		var t = new eui.Image();
-		this.thumb = t;
-		t.height = 8;
-		t.scale9Grid = new egret.Rectangle(3,3,2,2);
-		t.source = "roundthumb_png";
-		t.verticalCenter = 0;
-		t.width = 30;
-		return t;
-	};
 	return HScrollBarSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/HSliderSkin.exml'] = window.skins.HSliderSkin = (function (_super) {
 	__extends(HSliderSkin, _super);
@@ -583,24 +572,13 @@ var egret = window.egret;window.skins={};
 	__extends(VScrollBarSkin, _super);
 	function VScrollBarSkin() {
 		_super.call(this);
-		this.skinParts = ["thumb"];
+		this.skinParts = [];
 		
 		this.minHeight = 20;
 		this.minWidth = 8;
-		this.elementsContent = [this.thumb_i()];
 	}
 	var _proto = VScrollBarSkin.prototype;
 
-	_proto.thumb_i = function () {
-		var t = new eui.Image();
-		this.thumb = t;
-		t.height = 30;
-		t.horizontalCenter = 0;
-		t.scale9Grid = new egret.Rectangle(3,3,2,2);
-		t.source = "roundthumb_png";
-		t.width = 8;
-		return t;
-	};
 	return VScrollBarSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/VSliderSkin.exml'] = window.skins.VSliderSkin = (function (_super) {
 	__extends(VSliderSkin, _super);
@@ -659,8 +637,8 @@ var egret = window.egret;window.skins={};
 		_super.call(this);
 		this.skinParts = ["touxiangmask"];
 		
-		this.height = 120;
-		this.width = 510;
+		this.height = 140;
+		this.width = 600;
 		this.elementsContent = [this._Image1_i(),this._Label1_i(),this._Rect1_i(),this._Image2_i(),this.touxiangmask_i(),this._Image3_i(),this._Image4_i(),this._Image5_i(),this._Image6_i()];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.data.bgimg"],[0],this._Image1,"source");
@@ -751,10 +729,10 @@ var egret = window.egret;window.skins={};
 	_proto._Image4_i = function () {
 		var t = new eui.Image();
 		this._Image4 = t;
-		t.height = 70;
+		t.height = 80;
+		t.right = "2%";
 		t.verticalCenter = 0;
-		t.width = 70;
-		t.x = 428;
+		t.width = 80;
 		return t;
 	};
 	_proto._Image5_i = function () {
@@ -780,10 +758,10 @@ var egret = window.egret;window.skins={};
 	__extends(testSkin, _super);
 	function testSkin() {
 		_super.call(this);
-		this.skinParts = ["phb_bg","quanqiuphb_bg","btngroup","list","scroll","list0","scroll0","list1","scroll1","viewstack"];
+		this.skinParts = ["phb_bg","quanqiuphb_bg","btngroup","myrect","list","scroll","list0","scroll0","list1","scroll1","viewstack"];
 		
-		this.height = 1136;
-		this.width = 640;
+		this.height = 1333;
+		this.width = 750;
 		this.elementsContent = [this._Group4_i()];
 	}
 	var _proto = testSkin.prototype;
@@ -794,32 +772,33 @@ var egret = window.egret;window.skins={};
 		t.left = 0;
 		t.right = 0;
 		t.top = 0;
-		t.elementsContent = [this.phb_bg_i(),this.quanqiuphb_bg_i(),this.btngroup_i(),this._Rect1_i(),this.viewstack_i()];
+		t.elementsContent = [this.phb_bg_i(),this.quanqiuphb_bg_i(),this.btngroup_i(),this.myrect_i(),this.viewstack_i()];
 		return t;
 	};
 	_proto.phb_bg_i = function () {
 		var t = new eui.Image();
 		this.phb_bg = t;
 		t.anchorOffsetY = 0;
-		t.height = 950;
-		t.horizontalCenter = 0;
+		t.bottom = 0;
+		t.left = 0;
+		t.right = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.source = "tongyonk_bg_png";
-		t.verticalCenter = "0%";
-		t.width = 600;
+		t.source = "";
+		t.top = 0;
 		return t;
 	};
 	_proto.quanqiuphb_bg_i = function () {
 		var t = new eui.Image();
 		this.quanqiuphb_bg = t;
-		t.height = 85;
+		t.height = 90;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.source = "tiltle_qqphb_png";
-		t.verticalCenter = "-81%";
-		t.width = 345;
+		t.source = "";
+		t.top = "3%";
+		t.visible = false;
+		t.width = 362;
 		return t;
 	};
 	_proto.btngroup_i = function () {
@@ -827,12 +806,12 @@ var egret = window.egret;window.skins={};
 		this.btngroup = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
-		t.height = 60;
+		t.height = 74;
 		t.scaleX = 1;
 		t.scaleY = 1;
+		t.top = "13%";
 		t.touchEnabled = false;
-		t.verticalCenter = "-62%";
-		t.width = 360;
+		t.width = 462;
 		t.x = 84.12;
 		t.layout = this._HorizontalLayout1_i();
 		t.elementsContent = [this._Image1_i(),this._Image2_i(),this._Image3_i()];
@@ -845,55 +824,56 @@ var egret = window.egret;window.skins={};
 	};
 	_proto._Image1_i = function () {
 		var t = new eui.Image();
-		t.height = 60;
+		t.height = 74;
 		t.touchEnabled = true;
-		t.width = 120;
+		t.width = 154;
 		t.x = 0;
 		t.y = 0;
 		return t;
 	};
 	_proto._Image2_i = function () {
 		var t = new eui.Image();
-		t.height = 60;
+		t.height = 74;
 		t.touchEnabled = true;
-		t.width = 120;
+		t.width = 154;
 		t.x = 0;
 		t.y = 0;
 		return t;
 	};
 	_proto._Image3_i = function () {
 		var t = new eui.Image();
-		t.height = 60;
+		t.height = 74;
 		t.touchEnabled = true;
-		t.width = 120;
+		t.width = 154;
 		t.x = 10;
 		t.y = 10;
 		return t;
 	};
-	_proto._Rect1_i = function () {
+	_proto.myrect_i = function () {
 		var t = new eui.Rect();
+		this.myrect = t;
 		t.ellipseHeight = 100;
 		t.ellipseWidth = 100;
 		t.fillColor = 0xc3f3f4;
-		t.height = 720;
+		t.percentHeight = 71;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.verticalCenter = "5%";
-		t.width = 540;
+		t.top = "18%";
+		t.width = 600;
 		t.x = 28;
 		return t;
 	};
 	_proto.viewstack_i = function () {
 		var t = new eui.ViewStack();
 		this.viewstack = t;
-		t.height = 690;
+		t.percentHeight = 68;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.selectedIndex = 0;
-		t.verticalCenter = "7%";
-		t.width = 510;
+		t.top = "19%";
+		t.width = 650;
 		t.elementsContent = [this._Group1_i(),this._Group2_i(),this._Group3_i()];
 		return t;
 	};
@@ -913,7 +893,7 @@ var egret = window.egret;window.skins={};
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.width = 510;
+		t.width = 650;
 		t.x = 0;
 		t.y = 0;
 		t.viewport = this.list_i();
@@ -931,6 +911,8 @@ var egret = window.egret;window.skins={};
 	};
 	_proto._VerticalLayout1_i = function () {
 		var t = new eui.VerticalLayout();
+		t.horizontalAlign = "center";
+		t.verticalAlign = "top";
 		return t;
 	};
 	_proto._Group2_i = function () {

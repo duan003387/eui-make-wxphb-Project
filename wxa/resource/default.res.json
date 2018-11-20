@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,itembg_jpg,bun_bg3_hs_cf_png,bun_bg3_hs_dj_png,bun_bg3_hs_sj_png,bun_bg3_hs_png,bun_bg3_ls_cf_png,bun_bg3_ls_dj_png,bun_bg3_ls_sj_png,bun_bg3_ls_png,button_png,dui_png,dui1_png,Helot_09_png,Helot_11_png,phb1_png,phb2_png,phb3_png,qt_47_png,rankingtitle_png,shouye_3_png,tiltle_qqphb_png,tongyonk_bg_png,tongyonk_bg6_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,bg_jpg,egret_icon_png,description_json,itembg_jpg,bun_bg3_hs_cf_png,bun_bg3_hs_dj_png,bun_bg3_hs_png,bun_bg3_ls_cf_png,bun_bg3_ls_dj_png,button_png,dui_png,dui1_png,Helot_09_png,phb1_png,phb2_png,phb3_png,qt_47_png,rankingtitle_png,shouye_3_png,tiltle_qqphb_png,tongyonk_bg_png,tongyonk_bg6_png,bun_bg3_ls_png",
 			"name": "preload"
 		}
 	],
@@ -62,11 +62,6 @@
 			"name": "radiobutton_unselect_png"
 		},
 		{
-			"url": "assets/ScrollBar/roundthumb.png",
-			"type": "image",
-			"name": "roundthumb_png"
-		},
-		{
 			"url": "assets/Slider/thumb.png",
 			"type": "image",
 			"name": "thumb_png"
@@ -117,11 +112,6 @@
 			"name": "track_pb_png"
 		},
 		{
-			"url": "assets/ScrollBar/track_sb.png",
-			"type": "image",
-			"name": "track_sb_png"
-		},
-		{
 			"url": "assets/bg.jpg",
 			"type": "image",
 			"name": "bg_jpg"
@@ -147,11 +137,6 @@
 			"name": "Helot_09_png"
 		},
 		{
-			"url": "rankingList/Helot_11.png",
-			"type": "image",
-			"name": "Helot_11_png"
-		},
-		{
 			"url": "rankingList/bun_bg3_hs.png",
 			"type": "image",
 			"name": "bun_bg3_hs_png"
@@ -167,16 +152,6 @@
 			"name": "bun_bg3_hs_dj_png"
 		},
 		{
-			"url": "rankingList/bun_bg3_hs_sj.png",
-			"type": "image",
-			"name": "bun_bg3_hs_sj_png"
-		},
-		{
-			"url": "rankingList/bun_bg3_ls.png",
-			"type": "image",
-			"name": "bun_bg3_ls_png"
-		},
-		{
 			"url": "rankingList/bun_bg3_ls_cf.png",
 			"type": "image",
 			"name": "bun_bg3_ls_cf_png"
@@ -185,11 +160,6 @@
 			"url": "rankingList/bun_bg3_ls_dj.png",
 			"type": "image",
 			"name": "bun_bg3_ls_dj_png"
-		},
-		{
-			"url": "rankingList/bun_bg3_ls_sj.png",
-			"type": "image",
-			"name": "bun_bg3_ls_sj_png"
 		},
 		{
 			"url": "rankingList/button.png",
@@ -250,6 +220,101 @@
 			"url": "rankingList/tongyonk_bg6.png",
 			"type": "image",
 			"name": "tongyonk_bg6_png"
+		},
+		{
+			"url": "rankingList/bun_bg3_ls.png",
+			"type": "image",
+			"name": "bun_bg3_ls_png"
+		},
+		{
+			"url": "TestSkin/btnSkin.exml",
+			"type": "bin",
+			"name": "btnSkin_exml"
+		},
+		{
+			"url": "TestSkin/nima.exml",
+			"type": "bin",
+			"name": "nima_exml"
+		},
+		{
+			"url": "TestSkin/test.exml",
+			"type": "bin",
+			"name": "test_exml"
+		},
+		{
+			"url": "eui_skins/ButtonSkin.exml",
+			"type": "bin",
+			"name": "ButtonSkin_exml"
+		},
+		{
+			"url": "eui_skins/CheckBoxSkin.exml",
+			"type": "bin",
+			"name": "CheckBoxSkin_exml"
+		},
+		{
+			"url": "eui_skins/HScrollBarSkin.exml",
+			"type": "bin",
+			"name": "HScrollBarSkin_exml"
+		},
+		{
+			"url": "eui_skins/HSliderSkin.exml",
+			"type": "bin",
+			"name": "HSliderSkin_exml"
+		},
+		{
+			"url": "eui_skins/ItemRendererSkin.exml",
+			"type": "bin",
+			"name": "ItemRendererSkin_exml"
+		},
+		{
+			"url": "eui_skins/PanelSkin.exml",
+			"type": "bin",
+			"name": "PanelSkin_exml"
+		},
+		{
+			"url": "eui_skins/ProgressBarSkin.exml",
+			"type": "bin",
+			"name": "ProgressBarSkin_exml"
+		},
+		{
+			"url": "eui_skins/RadioButtonSkin.exml",
+			"type": "bin",
+			"name": "RadioButtonSkin_exml"
+		},
+		{
+			"url": "eui_skins/ScrollerSkin.exml",
+			"type": "bin",
+			"name": "ScrollerSkin_exml"
+		},
+		{
+			"url": "eui_skins/TextInputSkin.exml",
+			"type": "bin",
+			"name": "TextInputSkin_exml"
+		},
+		{
+			"url": "eui_skins/ToggleSwitchSkin.exml",
+			"type": "bin",
+			"name": "ToggleSwitchSkin_exml"
+		},
+		{
+			"url": "eui_skins/VScrollBarSkin.exml",
+			"type": "bin",
+			"name": "VScrollBarSkin_exml"
+		},
+		{
+			"url": "eui_skins/VSliderSkin.exml",
+			"type": "bin",
+			"name": "VSliderSkin_exml"
+		},
+		{
+			"url": "default.res.json",
+			"type": "json",
+			"name": "default.res_json"
+		},
+		{
+			"url": "default.thm.json",
+			"type": "json",
+			"name": "default.thm_json"
 		}
 	]
 }

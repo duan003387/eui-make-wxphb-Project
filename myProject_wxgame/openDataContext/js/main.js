@@ -240,6 +240,12 @@ var test = (function (_super) {
             console.log(value);
         });
         this.list.dataProvider = new eui.ArrayCollection(this.arr);
+        console.log(this.stage.height / this.stage.width);
+        if (this.stage.height / this.stage.width >= 1.8) {
+            console.log("啊啊啊");
+            this.myrect.top = "17%";
+            this.viewstack.top = "18%";
+        }
         this.Init();
     };
     //初始化界面
@@ -281,6 +287,7 @@ var test = (function (_super) {
             }
         }
         this.viewstack.selectedIndex = index;
+        this.phb_bg.verticalCenter;
     };
     return test;
 }(eui.Component));

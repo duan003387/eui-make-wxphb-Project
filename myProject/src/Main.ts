@@ -1,41 +1,9 @@
-//////////////////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (c) 2014-present, Egret Technology.
-//  All rights reserved.
-//  Redistribution and use in source and binary forms, with or without
-//  modification, are permitted provided that the following conditions are met:
-//
-//     * Redistributions of source code must retain the above copyright
-//       notice, this list of conditions and the following disclaimer.
-//     * Redistributions in binary form must reproduce the above copyright
-//       notice, this list of conditions and the following disclaimer in the
-//       documentation and/or other materials provided with the distribution.
-//     * Neither the name of the Egret nor the
-//       names of its contributors may be used to endorse or promote products
-//       derived from this software without specific prior written permission.
-//
-//  THIS SOFTWARE IS PROVIDED BY EGRET AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
-//  OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-//  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-//  IN NO EVENT SHALL EGRET AND CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-//  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-//  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;LOSS OF USE, DATA,
-//  OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-//  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-//  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
-//  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-//
-//////////////////////////////////////////////////////////////////////////////////////
 
 class Main extends eui.UILayer {
 
 
     protected createChildren(): void {
         super.createChildren();
-
-
-
-
 
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
@@ -97,7 +65,6 @@ class Main extends eui.UILayer {
         })
     }
 
-    private textfield: egret.TextField;
 
     private bitmap: egret.Bitmap;
     private isdisplay = false;
@@ -110,12 +77,8 @@ class Main extends eui.UILayer {
     private button: any;
     protected createGameScene(): void {
 
-        let sky = this.createBitmapByName("bg_jpg");
-        // this.addChild(sky);
         let stageW = this.stage.stageWidth;
         let stageH = this.stage.stageHeight;
-        sky.width = stageW;
-        sky.height = stageH;
 
         this.button = new eui.Button();
         this.button.label = "排行榜!";
@@ -131,29 +94,18 @@ class Main extends eui.UILayer {
         this.closeBtn.x = this.stage.stageWidth - 80;
         this.closeBtn.y = 80;
         this.closeBtn.visible = false;
-        this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_BEGIN,()=>{
+        this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => {
             this.closeBtn.source = "resource/882646219480720208.png"
-        },this)
+        }, this)
 
-        this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_END,()=>{
+        this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_END, () => {
             this.closeBtn.source = "resource/884123855432430447.png"
-        },this)
+        }, this)
         this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
             this.bitmap.parent && this.bitmap.parent.removeChild(this.bitmap);
             this.rankingListMask.parent && this.rankingListMask.parent.removeChild(this.rankingListMask);
             this.closeBtn.visible = false;
         }, this);
-    }
-
-    /**
-     * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
-     * Create a Bitmap object according to name keyword.As for the property of name please refer to the configuration file of resources/resource.json.
-     */
-    private createBitmapByName(name: string): egret.Bitmap {
-        let result = new egret.Bitmap();
-        let texture: egret.Texture = RES.getRes(name);
-        result.texture = texture;
-        return result;
     }
 
     /**
@@ -175,7 +127,6 @@ class Main extends eui.UILayer {
 
         //简单实现，打开这关闭使用一个按钮。
         //主要示例代码开始
-        
         const bitmapdata1 = new egret.BitmapData(window["sharedCanvas"]);
         bitmapdata1.$deleteSource = false;
         const texture = new egret.Texture();

@@ -9,6 +9,7 @@ class test extends eui.Component implements eui.UIComponent {
 	public btUpimgArr: string[] = [];
 	public btDownimgArr: string[] = [];
 	public viewstack: eui.ViewStack;
+	public myrect: eui.Rect;
 
 
 	public constructor() {
@@ -57,11 +58,20 @@ class test extends eui.Component implements eui.UIComponent {
 			console.log(value);
 		});
 		this.list.dataProvider = new eui.ArrayCollection(this.arr);
+		console.log(this.stage.height / this.stage.width);
+
+		if (this.stage.height / this.stage.width >= 1.8) {
+			console.log("啊啊啊");
+			
+			this.myrect.top = "17%"
+			this.viewstack.top = "18%"
+		}
 		this.Init();
 	}
 
 	//初始化界面
 	private Init() {
+
 		//初始化三个按钮状态
 		for (let i = 0; i < this.btngroup.numChildren; i++) {
 			let img: eui.Image = <eui.Image>this.btngroup.getChildAt(i);
@@ -103,5 +113,6 @@ class test extends eui.Component implements eui.UIComponent {
 			}
 		}
 		this.viewstack.selectedIndex = index;
+		this.phb_bg.verticalCenter
 	}
 }
